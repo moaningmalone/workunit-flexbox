@@ -33,63 +33,7 @@ nav ul {
 
 
 
-/* Flexbox
--------------------------------------------------------------------------------*/
-.flex-container {
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  flex-direction: row;
-}
-.flex-item {
-  flex: 1;
-  padding: 12px;
-  border: solid 1px #e7e7e7;
-}
 
-/*.flex-item h1,
-.flex-item h2 {
-  margin-top: 0;
-}
-*/
-
-.flex-first {
-}
-.flex-second {
-}
-.flex-third {
-  flex-grow: 2;
-}
-
-/**
- * Flexbox Media
- */
-@media (max-width: 480px ) {
-  .grid_row--sm {
-  }
-}
-
-@media (max-width: 720px ) {
-  #sidenav {
-    display: none;
-  }
-  .grid_row--md {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 720px) {
-  .toggle-nav {display: none;}
-}
-
-@media (max-width: 960px ) {
-  .grid__row--lg {
-    flex-direction: row;
-  }
-  .toggle-nav {
-  order: 0;
-  margin-left: 20px;
- }
-}
 
 
 /* Workunit Styles
@@ -124,6 +68,8 @@ p a {
 p a:hover {
   border-bottom: dotted 1px;
 }
+
+
 .workunit-item-description {
   margin-bottom: 20px;
 }
@@ -154,13 +100,15 @@ a.brand {
   line-height: 90%;
 }
 
-/*.brand-div {
-  margin-top: -4px;
-}*/
-
+#sidebar {
+  margin: 12px;
+}
 /**
 Side Navigation Menu
 */
+header {
+  float: left;
+}
 #sidenav {
   font-family: 'Montserrat', sans-serif;
 }
@@ -172,6 +120,82 @@ ul#main-menu li a{
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   margin: -8px 0;
+}
+
+/* Flexbox
+-------------------------------------------------------------------------------*/
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+}
+.flex-container-col {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+}
+.flex-item {
+  flex: 1;
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+}
+
+/*.flex-item h1,
+.flex-item h2 {
+  margin-top: 0;
+}
+*/
+
+.flex-first {
+}
+.flex-second {
+  flex-grow: 2;
+}
+.flex-third {
+}
+
+/**
+ * Flexbox Media
+ */
+@media (max-width: 480px ) {
+  .grid_row--sm {
+  }
+}
+
+@media (max-width: 720px ) {
+  #sidenav {
+    display: none;
+  }
+  .grid_row--md {
+    flex-direction: column;
+  }
+  a.brand {
+    font-size: 3vw;
+  }
+  .toggle-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  .toggle-nav {
+    display: none;
+  }
+  header {
+    width: 20%;
+  }
+  #main {
+    width: 80%;
+    margin:0;
+  }
+
+}
+
+
+@media (max-width: 960px ) {
+  .grid__row--lg {
+    flex-direction: row;
+  }
 }
 
 
