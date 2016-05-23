@@ -1,0 +1,184 @@
+/**
+ * normalize
+ */
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+img {
+  border: 0;
+}
+nav ul {
+  list-style-type: none;
+}
+
+
+/** General
+-------------------------------------------------------------------------------*/
+
+
+
+
+/* Flexbox
+-------------------------------------------------------------------------------*/
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+}
+.flex-item {
+  flex: 1;
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+}
+
+/*.flex-item h1,
+.flex-item h2 {
+  margin-top: 0;
+}
+*/
+
+.flex-first {
+}
+.flex-second {
+}
+.flex-third {
+  flex-grow: 2;
+}
+
+/**
+ * Flexbox Media
+ */
+@media (max-width: 480px ) {
+  .grid_row--sm {
+  }
+}
+
+@media (max-width: 720px ) {
+  #sidenav {
+    display: none;
+  }
+  .grid_row--md {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 720px) {
+  .toggle-nav {display: none;}
+}
+
+@media (max-width: 960px ) {
+  .grid__row--lg {
+    flex-direction: row;
+  }
+  .toggle-nav {
+  order: 0;
+  margin-left: 20px;
+ }
+}
+
+
+/* Workunit Styles
+-------------------------------------------------------------------------------*/
+* {
+  font-size: 16px;
+  font-family: 'Vollkorn', serif;
+}
+p, .btn, input {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: red;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+p a {
+  font-style: italic;
+}
+p a:hover {
+  border-bottom: dotted 1px;
+}
+.workunit-item-description {
+  margin-bottom: 20px;
+}
+
+.workunit-item-description,
+.workunit-item-bullets li {
+  font-size: 22px;
+  line-height: 110%;
+}
+/* UL Lists replace bullets with hyphen */
+ul.workunit-item-bullets, ul.workunit-beinhaltet, ul.workunit-prices {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.workunit-item-bullets li, .workunit-beinhaltet li, .workunit-prices li {
+  list-style-type: none;
+}
+.workunit-item-bullets li:before, .workunit-beinhaltet li:before, .workunit-prices li:before {
+  content: "\2013";
+}
+
+a.brand {
+  color: black;
+  font-family: 'Vollkorn', serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+/*.brand-div {
+  margin-top: -4px;
+}*/
+
+/**
+Side Navigation Menu
+*/
+#sidenav {
+  font-family: 'Montserrat', sans-serif;
+}
+ul#main-menu {
+  padding-left: 0;
+}
+ul#main-menu li a{
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: -8px 0;
+}
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+
+}
