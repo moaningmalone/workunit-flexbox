@@ -2,7 +2,8 @@ $(document).ready(function()
 {
     $("button.toggle-nav").click(function(){
     // Side Menu Trigger Function
-        $("#sidenav").toggle();
+        $("#main-nav").toggle();
+        $("#main-nav").prependTo("#mobilenav");
 
   // Swap Hamburger for X
     var el = $(this);
@@ -13,7 +14,7 @@ $(document).ready(function()
       el.text(el.data("text-swap"));
     }
     // Make Main Content opaque
-    $("#main").toggleClass("opaque");
+    $("#summary, #article, #price").toggleClass("opaque");
 
 
   });

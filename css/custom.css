@@ -31,13 +31,6 @@ button {
   padding: 0;
 }
 
-/** General
--------------------------------------------------------------------------------*/
-
-
-
-
-
 
 
 /* Workunit Styles
@@ -100,21 +93,29 @@ ul.workunit-item-bullets, ul.workunit-beinhaltet, ul.workunit-prices {
 }
 
 
-
+#main {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#sidebar {
+  margin-top: 15px;
+}
 a.brand {
   color: black;
   font-family: 'Vollkorn', serif;
   font-size: 28px;
   font-weight: bold;
-  line-height: 90%;
+  line-height: 80%;
 }
-/**
-Side Navigation Menu
-*/
+
 header {
   float: left;
 }
-#sidenav {
+
+/**
+Side Navigation Menu
+*/
+#main-nav {
   font-family: 'Montserrat', sans-serif;
 }
 ul#main-menu {
@@ -124,7 +125,6 @@ ul#main-menu li a{
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  margin: -8px 0;
 }
 ul#main-menu li a:hover,
 ul#main-menu li.active a {
@@ -146,22 +146,13 @@ ul#main-menu li.active a {
 }
 .flex-item {
   flex: 1;
-  padding: 12px;
   border: solid 1px #e7e7e7;
 }
-
-/*.flex-item h1,
-.flex-item h2 {
-  margin-top: 0;
-}
-*/
-
-.flex-first {
-}
-.flex-second {
+#header {
   flex-grow: 2;
 }
-.flex-third {
+#article {
+  flex-grow: 2;
 }
 
 /**
@@ -176,25 +167,32 @@ ul#main-menu li.active a {
 /* Small Screen
 ------------------------------------------------*/
 @media (max-width: 720px ) {
-  #sidebar {
-    margin: 8px;
-  }
-  #sidenav {
+  #main-nav {
     display: none;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .grid_row--md {
     flex-direction: column;
   }
+  .flex-nav {
+    flex-grow: 0;
+  }
+  #summary {
+    flex-grow: 6;
+  }
   a.brand {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    line-height: 90%;
 /*   transform: rotate(270deg); */
   }
   .toggle-nav {
     width: 5vh;
     margin-top: 8px;
   }
-  .img-left img,
-  .img-right img {
+  .img-summary img,
+  .img-price img {
     display: none;
   }
   .img-center img {
@@ -208,17 +206,13 @@ ul#main-menu li.active a {
     display: none;
   }
   header {
-    width: 20%;
   }
-  #main {
-    width: 80%;
-    margin:0;
+  #mobilenav{
+    display: none;
   }
-  #sidebar {
-    margin: 12px;
-  }
-  .img-left img {
+  .img-summary img {
     max-height: 30vh;
+    margin-top: 15px;
   }
 }
 
