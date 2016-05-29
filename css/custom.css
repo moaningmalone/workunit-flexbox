@@ -121,7 +121,7 @@ Side Navigation Menu
 ul#main-menu {
   padding-left: 0;
 }
-ul#main-menu li a{
+ul#main-menu li a {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -129,6 +129,12 @@ ul#main-menu li a{
 ul#main-menu li a:hover,
 ul#main-menu li.active a {
   color: red;
+}
+ul#main-menu ul {
+  padding-left: 8px;
+}
+ul#main-menu ul li a {
+  font-size: 12px;
 }
 
 
