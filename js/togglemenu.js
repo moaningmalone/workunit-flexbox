@@ -13,9 +13,6 @@ $(document).ready(function()
       el.data("text-original", el.text());
       el.text(el.data("text-swap"));
     }
-    // Make Main Content opaque
-    $("#summary, #article, #price").toggleClass("opaque");
-
 
   });
   // end button toggle
