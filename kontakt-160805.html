@@ -7,6 +7,7 @@
   <title>Kontakt | Workunit</title>
   <meta name="description" content="MetaDescription">
 
+  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/custom.css">
@@ -29,8 +30,8 @@
   <div id="emptymobilediv"></div>
    <nav id="main-nav" class="SETCLASS">
     <ul id="main-menu">
-     <li><a href="/workunit-flexbox/seo.html">SEO</a></li>
      <li><a href="/workunit-flexbox/web-analytics.html">Web Analytics</a></li>
+     <li><a href="/workunit-flexbox/seo.html">SEO</a></li>
      <li><a href="/workunit-flexbox/web-design.html">Web Design</a></li>
      <li><a href="/workunit-flexbox/schulungen.html">Schulungen</a></li>
      <li><a href="/workunit-flexbox/ueber-uns.html">Über Uns</a></li>
@@ -38,6 +39,7 @@
     </ul>
   </nav>
 </header>
+
 <main>
 <div id="content" class="flex-container grid_row--md">
 
@@ -45,8 +47,11 @@
    <div class="img-summary">
      <img src="http://cyberneticzoo.com/wp-content/uploads/ElektroJ7p1-x640%281%29.jpg" alt="">
    </div>
-   <h2>WorkUnit</h2>
-   <p>Wir betreuen die gesamte digitale Wertschöpfungskette. Von der Konzeption und Erstellung der Webseite zu online Marketing und Analyse.</p>
+   <h2>WAS HIER?</h2>
+     <ul class="workunit-beinhaltet">
+       <li> Bullet Points?</li>
+       <li> Wohl kaum</li>
+     </ul>
  </div>
 
 <div id="contactform" class="flex-item">
@@ -57,60 +62,64 @@
   <div class="img-center">
   </div>
 
-  <h3>An welchem Angebot sind Sie interessiert?</h3>
-  <div>
-  <label for="SEO" class="SETCLASS">SEO</label>
-  <input type="checkbox" name="interest" value="SEO" id="SEO">
-</div>
-<div>
-  <label for="SEA" class="SETCLASS">SEA</label>
-  <input type="checkbox" name="interest" value="SEA" id="SEA">
-</div>
-<div>
-  <label for="WebAnalytics" class="SETCLASS">Web Analytics</label>
-  <input type="checkbox" name="interest" value="WebAnalytics" id="WebAnalytics">
-</div>
-<div>
-  <label for="WebDesign" class="SETCLASS">Web Design</label>
-  <input type="checkbox" name="interest" value="WebDesign" id="WebDesign">
-</div>
+<!-- BOOTSTRAP FORM STARTS HERE ----------------------------------------------------------------------------------- -->
   <h3>Angaben zu Ihrer Webseite</h3>
-   <label for="inputWebsite" class="col-sm-4 control-label">Webseite</label>
-      <div class="form-row">
-              <input type="url" class="form-control" id="inputWebsite">
+  <div class="form-group">
+      <label for="inputWebsite" class="col-sm-4 control-label">Webseite</label>
+      <div class="col-md-8 ">
+          <div class="input-group">
+              <input type="url" class="form-control" id="inputWebsite>
               <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+          </div>
       </div>
-
+  </div>
+  <div class="form-group">
       <label for="websiteComment" class="col-sm-4 control-label">Ziele</label>
-      <div class="form-row">
+      <div class="col-md-8 ">
+          <div class="input-block-level">
               <textarea class="form-control" rows="3" id="websiteComment" placeholder="Welche Ziele wollen Sie mit der Optimierung erreichen?"></textarea>
+          </div>
       </div>
+  </div>
   <h3>Kontaktdaten</h3>
-
+  <div class="form-group">
       <label for="inputName" class="col-sm-4 control-label">Name</label>
-      <div class="form-row">
+      <div class="col-md-8 ">
+          <div class="input-group">
               <input type="text" class="form-control" id="inputName" required>
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          </div>
       </div>
-
+  </div>
+  <div class="form-group">
       <label for="inputEmail" class="col-sm-4 control-label">Email</label>
-      <div class="form-row">
+      <div class="col-md-8 ">
+          <div class="input-group">
               <input type="email" class="form-control" id="inputEmail" required>
               <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+          </div>
       </div>
+  </div>
 
+  <div class="form-group">
       <label for="telefone" class="col-sm-4 control-label">Telefon</label>
-      <div class="form-row">
+      <div class="col-md-8 ">
+          <div class="input-group">
               <input type="tel" class="form-control" id="telefone" >
               <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+          </div>
       </div>
-
-      <div class="form-button">
-          <button type="submit" class="formbutton">Offerte einholen</button>
+  </div>
+  <div class="form-group">
+      <div class="col-md-offset-4 col-md-8 ">
+          <button type="submit" class="btn btn-lg btn-black">Offerte einholen</button>
       </div>
+  </div>
+  <!-- BOOTSTRAP FORM ENDS HERE ----------------------------------------------------------------------------------- -->
 
 
 </div><!-- /.article -->
+
 
 </div><!-- /#content -->
 </main>

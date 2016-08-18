@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Analytics | WorkUnit</title>
+  <title>Web Analytics | Workunit</title>
   <meta name="description" content="MetaDescription">
 
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700' rel='stylesheet' type='text/css'>
@@ -15,31 +15,31 @@
 </head>
 
 <body>
-
-<div id="mobilenav"></div>
+  <div id="mobilenav"></div>
 
 <div id="main" class="flex-container grid_row--md">
-  <div id="header" class="flex-container flex-item">
-   <div id="sidebar"class="flex-item">
-    <header>
-     <div class="flex-container-col">
-      <a class="brand" href="#fakelink" title="WorkUNIT" rel="home">WORK-<br/>UNIT</a>
-     <button class="toggle-nav" data-text-swap="X">
-			    <span>☰</span>
-		  </button>
-    </div>
-     <nav id="main-nav" class="SETCLASS">
-       <ul id="main-menu">
-         <li class="active"><a href="/workunit-flexbox/web-analytics.html">Web Analytics</a></li>
-         <li><a href="/workunit-flexbox/seo.html">SEO</a></li>
-         <li><a href="/workunit-flexbox/web-design.html">Web Design</a></li>
-         <li><a href="/workunit-flexbox/schulungen.html">Schulungen</a></li>
-         <li><a href="/workunit-flexbox/ueber-uns.html">Über Uns</a></li>
-         <li><a href="/workunit-flexbox/kontakt.html">Kontakt</a></li>
-       </ul>
-     </nav>
-   </header>
- </div><!-- /#sidebar -->
+
+<header>
+  <button class="toggle-nav" data-text-swap="X">
+ 	<span>☰</span>
+  </button>
+  <div id="logo">
+   <a class="brand" href="#fakelink" title="WorkUNIT" rel="home">WORKUNIT</a>
+  </div>
+  <div id="emptymobilediv"></div>
+   <nav id="main-nav" class="SETCLASS">
+    <ul id="main-menu">
+     <li><a href="/workunit-flexbox/seo.html">SEO</a></li>
+     <li><a href="/workunit-flexbox/web-analytics.html">Web Analytics</a></li>
+     <li><a href="/workunit-flexbox/web-design.html">Web Design</a></li>
+     <li><a href="/workunit-flexbox/schulungen.html">Schulungen</a></li>
+     <li><a href="/workunit-flexbox/ueber-uns.html">Über Uns</a></li>
+     <li><a href="/workunit-flexbox/kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div id="content" class="flex-container grid_row--md">
 
  <div id="summary" class="flex-item">
    <div class="img-summary">
@@ -51,9 +51,15 @@
        <li> Beratung</li>
        <li> Schulungen</li>
      </ul>
- </div>
 
-</div><!-- /.header -->
+     <h2>(PREISE)</h2>
+     <ul class="workunit-prices">
+     <li> Google Analytics Konfiguration<br />
+     <i>CHF 220.-</i></li>
+     <li> Piwik oder Open Webs Installation<br />
+     <i>Preis auf Anfrage</i></li>
+     </ul>
+ </div>
 
 
 <div id="article" class="flex-item">
@@ -75,23 +81,17 @@
        <li> Optional: Definition von Zielen und KPI’s und Einrichten des Trackings</li>
        <li> Optional: Einrichten von Monatsreportings</li>
     </ul>
-
   </div>
 
+    <div id="contact" class="flex-item">
+      <h2>KONTAKT</h2>
+      <p>Kontaktieren Sie uns für eine Offerte<br />
+      <a href="/workunit-flexbox/kontakt.html">Kontaktformular</a></p>
+    </div>
 
-<div id="price" class="flex-item">
-  <h2>PREISE</h2>
-  <div class="img-price">
-  </div>
+    </div><!-- /#content -->
+    </main>
+    </div><!-- /#main -->
 
-  <ul class="workunit-prices">
-  <li> Google Analytics Konfiguration<br />
-  <i>CHF 220.-</i></li>
-  <li> Piwik oder Open Webs Installation<br />
-  <i>Preis auf Anfrage</i></li>
-  </ul></div>
-
-</div><!-- /#main -->
-
-</body>
-</html>
+    </body>
+    </html>

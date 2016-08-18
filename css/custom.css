@@ -38,13 +38,16 @@ p, .btn, input {
   font-family: 'Vollkorn', serif;
   font-weight: normal;
 }
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: red;
   margin-bottom: 6px;
   margin-top: 12px;
+}
+h3 {
+  font-size: 14px;
 }
 a {
   color: red;
@@ -144,7 +147,9 @@ ul#main-menu ul li a {
 #article {
   flex-grow: 2;
 }
-
+#contactform {
+  flex-grow: 3;
+}
 /**
  * Flexbox Media
  */
@@ -153,6 +158,41 @@ ul#main-menu ul li a {
   }
 }
 
+
+/* Forms
+------------------------------------------------*/
+label {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+}
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: inline-block;
+  padding: 4px 8px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 400px;
+}
+.form-control:focus {
+  border-color: red;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255,0,0,0.75);
+  outline: 0 none;}
+
+.form-row {
+  margin-bottom: 12px;
+}
+.form-button {
+  margin-left: 110px;
+}
+button.formbutton {
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+}
 
 /* Small Screen
 ------------------------------------------------*/
@@ -200,7 +240,7 @@ ul#main-menu ul li a {
     margin-right: 10px;
     margin-top: 45px;
     height: 91%;
-    width: 35%;
+    width: 40%;
     z-index: 100;
     opacity: 0.98;
   }
@@ -220,8 +260,7 @@ ul#main-menu ul li a {
     display: block;
     font-size: 1.2em;
   }
-  .img-summary img,
-  .img-contact img {
+  .img-summary img {
     display: none;
   }
   .img-center img {
@@ -241,6 +280,7 @@ ul#main-menu ul li a {
   }
   main {
     margin-left: 173px; /* Minus margin-left: 12px von flex-item! */
+    width: 100%;
   }
   #logo {
     width: 185px;
