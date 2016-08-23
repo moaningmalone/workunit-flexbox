@@ -213,6 +213,7 @@ button.formbutton {
 ------------------------------------------------*/
 @media (max-width: 720px ) {
   header {
+    margin-top: 10px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
     display: flex;
   }
