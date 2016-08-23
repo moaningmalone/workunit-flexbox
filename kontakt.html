@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/custom.css">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/togglemenu.js"></script>
+  <script type="text/javascript" src="js/formerrormessages.js"></script><!----------------- THIS DON'T WORK!! -------->
 </head>
 
 <body>
@@ -57,28 +58,29 @@
   <div class="img-center">
   </div>
 
-  <h3>An welchem Angebot sind Sie interessiert?</h3>
-  <div>
-  <label for="SEO" class="SETCLASS">SEO</label>
+<h3>An welchem Angebot sind Sie interessiert?</h3>
+<div class="form-row checkbox-row flex-container">
+  <div class="checkbox-item">
+  <label for="SEO" class="label-right">SEO</label>
   <input type="checkbox" name="interest" value="SEO" id="SEO">
-</div>
-<div>
-  <label for="SEA" class="SETCLASS">SEA</label>
+ </div>
+ <div class="checkbox-item">
+  <label for="SEA" class="label-right">SEA</label>
   <input type="checkbox" name="interest" value="SEA" id="SEA">
-</div>
-<div>
-  <label for="WebAnalytics" class="SETCLASS">Web Analytics</label>
+ </div>
+ <div class="checkbox-item">
+  <label for="WebAnalytics" class="label-right">Web Analytics</label>
   <input type="checkbox" name="interest" value="WebAnalytics" id="WebAnalytics">
-</div>
-<div>
-  <label for="WebDesign" class="SETCLASS">Web Design</label>
+ </div>
+ <div class="checkbox-item">
+  <label for="WebDesign" class="label-right">Web Design</label>
   <input type="checkbox" name="interest" value="WebDesign" id="WebDesign">
+ </div>
 </div>
   <h3>Angaben zu Ihrer Webseite</h3>
    <label for="inputWebsite" class="col-sm-4 control-label">Webseite</label>
       <div class="form-row">
-              <input type="url" class="form-control" id="inputWebsite">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+              <input type="url" class="form-control" id="inputWebsite" placeholder="Die URL Ihrer Webseite">
       </div>
 
       <label for="websiteComment" class="col-sm-4 control-label">Ziele</label>
@@ -90,19 +92,16 @@
       <label for="inputName" class="col-sm-4 control-label">Name</label>
       <div class="form-row">
               <input type="text" class="form-control" id="inputName" required>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
       </div>
 
       <label for="inputEmail" class="col-sm-4 control-label">Email</label>
       <div class="form-row">
               <input type="email" class="form-control" id="inputEmail" required>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
       </div>
 
       <label for="telefone" class="col-sm-4 control-label">Telefon</label>
       <div class="form-row">
               <input type="tel" class="form-control" id="telefone" >
-              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
       </div>
 
       <div class="form-button">

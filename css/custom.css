@@ -161,11 +161,23 @@ ul#main-menu ul li a {
 
 /* Forms
 ------------------------------------------------*/
+#contactform h3 {
+  margin-bottom: 12px;
+}
 label {
   display: inline-block;
   float: left;
   margin-right: 10px;
   width: 100px;
+}
+label.label-right {
+  float: none;
+}
+.checkbox-row {
+  width: 550px;
+  }
+.checkbox-item {
+  flex: 1 100px;
 }
 .form-control {
   border: 1px solid #ccc;
@@ -180,10 +192,13 @@ label {
 .form-control:focus {
   border-color: red;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255,0,0,0.75);
-  outline: 0 none;}
-
+  outline: 0 none;
+}
 .form-row {
   margin-bottom: 12px;
+}
+input[type=checkbox] {
+  float: left;
 }
 .form-button {
   margin-left: 110px;
@@ -236,6 +251,7 @@ button.formbutton {
     background-color: white;
     display: none;
     position: absolute;
+    line-height: 36px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 45px;
