@@ -169,15 +169,10 @@ ul#main-menu ul li a {
 label {
   display: inline-block;
   float: left;
-  margin-right: 10px;
-  width: 100px;
 }
 label.label-right {
   float: none;
 }
-.checkbox-row {
-  width: 550px;
-  }
 .checkbox-item {
   flex: 1 100px;
 }
@@ -189,7 +184,6 @@ label.label-right {
   display: inline-block;
   padding: 4px 8px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 400px;
 }
 .form-control:focus {
   border-color: red;
@@ -220,6 +214,7 @@ button.formbutton {
     display: flex;
   }
   #main {
+    margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -288,7 +283,11 @@ button.formbutton {
   .img-center img {
     max-height: 30vh;
   }
+  .form-control {
+    width: 95%;
 }
+}
+
 
 /* Large Screen
 ------------------------------------------------*/
@@ -321,6 +320,17 @@ button.formbutton {
     margin-top: 15px;
     max-height: 66%;
   }
+  .form-control {
+    width: 400px;
+  }
+  .checkbox-row {
+    width: 550px;
+    }
+    label {
+      margin-right: 10px;
+      width: 100px;
+    }
+
 }
 
 
