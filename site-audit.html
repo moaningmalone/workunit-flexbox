@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,39 +15,37 @@
 </head>
 
 <body>
-
-<div id="mobilenav"></div>
+  <div id="mobilenav"></div>
 
 <div id="main" class="flex-container grid_row--md">
-  <div id="header" class="flex-container flex-item">
-   <div id="sidebar"class="flex-item">
-    <header>
-     <div class="flex-container-col">
-      <a class="brand" href="#fakelink" title="WorkUNIT" rel="home">WORK-<br/>UNIT</a>
-     <button class="toggle-nav" data-text-swap="X">
-			    <span>☰</span>
-		  </button>
-    </div>
-     <nav id="main-nav" class="SETCLASS">
-       <ul id="main-menu">
-         <li><a href="/workunit-flexbox/web-analytics.html">Web Analytics</a></li>
-         <li><a href="/workunit-flexbox/seo.html">SEO</a></li>
-          <ul>
-            <li class="active"><a href="/workunit-flexbox/site-audit.html">SEO Analyse</a></li>
-            <li><a href="#fakelink">Ein Beispiel..</a></li>
-          </ul>
-         <li><a href="/workunit-flexbox/web-design.html">Web Design</a></li>
-         <li><a href="/workunit-flexbox/schulungen.html">Schulungen</a></li>
-         <li><a href="/workunit-flexbox/ueber-uns.html">Über Uns</a></li>
-         <li><a href="/workunit-flexbox/kontakt.html">Kontakt</a></li>
-       </ul>
-     </nav>
-   </header>
- </div><!-- /#sidebar -->
 
+<header>
+<div id="fixedheader">
+  <button class="toggle-nav" data-text-swap="X">
+ 	<span>&#8801;</span>
+  </button>
+  <div id="logo">
+   <a class="brand" href="#fakelink" title="WorkUNIT" rel="home">WORKUNIT</a>
+  </div>
+  <div id="emptymobilediv"></div>
+   <nav id="main-nav" class="SETCLASS">
+    <ul id="main-menu">
+     <li><a href="/workunit-flexbox/seo.html">SEO</a></li>
+     <li><a href="/workunit-flexbox/web-analytics.html">Web Analytics</a></li>
+     <li><a href="/workunit-flexbox/web-design.html">Web Design</a></li>
+     <li><a href="/workunit-flexbox/schulungen.html">Schulungen</a></li>
+     <li><a href="/workunit-flexbox/ueber-uns.html">Über Uns</a></li>
+     <li><a href="/workunit-flexbox/kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+<main>
+<div id="content" class="flex-container grid_row--md">
  <div id="summary" class="flex-item">
    <div class="img-summary">
-     <img src="http://cyberneticzoo.com/wp-content/uploads/ElektroJ7p1-x640%281%29.jpg">
+     <img src="http://cyberneticzoo.com/wp-content/uploads/ElektroJ7p1-x640%281%29.jpg" alt="">
    </div>
    <h2>BEINHALTET</h2>
      <ul class="workunit-beinhaltet">
@@ -58,16 +56,13 @@
      <p>Die empfohlenen Massnahmen können Sie anschliessend selbständig umsetzen. Oder wir helfen Ihnen dabei.</p>
  </div>
 
-</div><!-- /.header -->
-
-
 <div id="article" class="flex-item">
   <h1>SEO ANALYSE</h1>
   <div class="workunit-item-description">
     Analyse Ihrer Webseite mit priorisierten Optimierungsmassnahmen. Der erste Schritt für Ihre Suchmaschinenoptimierung.
   </div>
   <div class="img-center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/ESO_Hewlett_Packard_2116_minicomputer.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/ESO_Hewlett_Packard_2116_minicomputer.jpg" alt="">
   </div>
 
     <p>In dieser Analyse überprüfen wir ob Ihre Webseite technische und inhaltliche Voraussetzungen für die Positionierung in Suchmaschinen erfüllt. Wir zeigen Ihnen, wie Sie Ihre Webseite anpassen können, um die höchstmögliche Sichtbarkeit in Suchmaschinen zu erreichen.</p>
@@ -90,7 +85,7 @@
 <div id="price" class="flex-item">
   <h2>PREISE</h2>
   <div class="img-price">
-    <img src="http://3.bp.blogspot.com/-64iDexZeJQs/UkxUZfQ23mI/AAAAAAAAYd4/e2ZEl5DShDc/s1600/Mamie+Van+Doren.+Sex+Kittens+Go+to+College+%25281960%2529.jpg">
+    <img src="http://3.bp.blogspot.com/-64iDexZeJQs/UkxUZfQ23mI/AAAAAAAAYd4/e2ZEl5DShDc/s1600/Mamie+Van+Doren.+Sex+Kittens+Go+to+College+%25281960%2529.jpg" alt="">
   </div>
 
   <ul class="workunit-prices">
@@ -105,6 +100,8 @@
   </ul>
 </div>
 
+</div><!-- /#content -->
+</main>
 </div><!-- /#main -->
 
 </body>

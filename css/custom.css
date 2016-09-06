@@ -67,7 +67,9 @@ p a:hover {
 .opaque {
   opacity: 0.4;
 }
-
+.workunit-item-description {
+  margin-bottom: 10px;
+}
 .workunit-item-bullets li {
   font-size: 22px;
   line-height: 110%;
@@ -255,7 +257,7 @@ button.formbutton {
     background-color: white;
     display: none;
     position: absolute;
-    line-height: 36px;
+    line-height: 38px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 45px;
@@ -295,11 +297,12 @@ button.formbutton {
     display: none;
   }
   header {
-    position: fixed;
     width: 185px;
   }
+  #fixedheader {
+    position: fixed;
+  }
   main {
-    margin-left: 173px; /* Minus margin-left: 12px von flex-item! */
     width: 100%;
   }
   #logo {
@@ -315,8 +318,8 @@ button.formbutton {
     margin-left: 12px;
   }
   .img-summary img {
-    max-height: 30vh;
     margin-top: 15px;
+    max-height: 66%;
   }
 }
 
