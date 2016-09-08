@@ -128,9 +128,6 @@ ul#main-menu ul {
 ul#main-menu ul li a {
   font-size: 12px;
 }
-#summary {
-  margin-bottom: 12px; /* Just so it's the same as #contactform margin-bottom */
-}
 
 
 /* Flexbox
@@ -167,7 +164,7 @@ label {
   float: left;
 }
 label.label-right {
-  float: none;
+  margin-left: 4px;
 }
 .checkbox-item {
   flex: 1 100px;
@@ -190,7 +187,6 @@ label.label-right {
   margin-bottom: 12px;
 }
 input[type=checkbox] {
-  float: left;
 }
 .form-button {
   margin-left: 110px;
@@ -279,6 +275,9 @@ button.formbutton {
   }
   .img-center img {
     max-height: 30vh;
+  }
+  #contactform {
+    margin-bottom: 18px;
   }
   .form-control {
     width: 95%;
