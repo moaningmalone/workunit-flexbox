@@ -133,13 +133,11 @@ ul#main-menu ul li a {
 /* Flexbox
 -------------------------------------------------------------------------------*/
 .flex-container {
-display: -webkit-box;
   display: -webkit-flex; /* Safari */
   display: flex;
   flex-direction: row;
 }
 .flex-container-col {
-display: -webkit-box;
   display: -webkit-flex; /* Safari */
   display: flex;
   flex-direction: column;
@@ -209,9 +207,7 @@ button.formbutton {
     margin-top: 10px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
     display: flex;
-    display: -webkit-box;
     display: -webkit-flex; /* Safari */
-
   }
   #main {
     margin-bottom: 5px;
