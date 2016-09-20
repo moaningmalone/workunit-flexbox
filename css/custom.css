@@ -133,14 +133,18 @@ ul#main-menu ul li a {
 /* Flexbox
 -------------------------------------------------------------------------------*/
 .flex-container {
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  flex-direction: row;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+      flex-direction: row;
 }
 .flex-container-col {
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  flex-direction: column;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+      flex-direction: column;
 }
 .flex-item {
   flex: 1;
@@ -194,6 +198,7 @@ input[type=checkbox] {
 button.formbutton {
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  cursor: pointer;
   display: block;
   font-family: 'Montserrat', sans-serif;
   padding: 7px 10px;
@@ -205,8 +210,10 @@ button.formbutton {
   #fixedheader {
     margin-top: 10px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-  }
+    display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;  }
   #main {
     margin-bottom: 5px;
     margin-left: 10px;
