@@ -133,18 +133,16 @@ ul#main-menu ul li a {
 /* Flexbox
 -------------------------------------------------------------------------------*/
 .flex-container {
-  display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-      flex-direction: row;
+display: -webkit-box;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
 }
 .flex-container-col {
-  display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-      flex-direction: column;
+display: -webkit-box;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
 }
 .flex-item {
   flex: 1;
@@ -210,10 +208,11 @@ button.formbutton {
   #fixedheader {
     margin-top: 10px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
     display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;  }
+    display: -webkit-flex; /* Safari */
+
+  }
   #main {
     margin-bottom: 5px;
     margin-left: 10px;
