@@ -66,9 +66,60 @@
 
 <div id="contact" class="flex-item">
   <h2>KONTAKT</h2>
-  <p>Kontaktieren Sie uns für eine Offerte<br />
-  <a href="/workunit-flexbox/kontakt.html">Kontaktformular</a></p>
-</div>
+  <form action="https://formspree.io/moaningmalone@yandex.com"
+        method="POST">
+<input type="hidden" name="_next" value="http://moaningmalone.github.io/workunit-flexbox/anfrage-erhalten.html"/>
+
+      <label for="inputName" class="col-sm-4 control-label">Name *</label>
+      <div class="form-row">
+              <input type="text" class="form-control-side" id="inputName" name="inputName" required>
+      </div>
+
+      <label for="inputEmail" class="col-sm-4 control-label">Email *</label>
+      <div class="form-row">
+              <input type="email" class="form-control-side" id="inputEmail" name="inputEmail" required>
+      </div>
+
+      <label for="telefone" class="col-sm-4 control-label">Telefon</label>
+      <div class="form-row">
+              <input type="tel" class="form-control-side" id="telefone" name="telefone">
+      </div>
+
+  <h3>Angaben zu Ihrer Webseite</h3>
+   <label for="inputWebsite" class="col-sm-4 control-label">Webseite</label>
+      <div class="form-row">
+              <input class="form-control-side" id="inputWebsite" name="inputWebsite" placeholder="Die URL Ihrer Webseite">
+      </div>
+
+      <label for="websiteComment" class="col-sm-4 control-label">Ziele</label>
+      <div class="form-row">
+              <textarea class="form-control-side" rows="3" id="websiteComment" name="websiteComment" placeholder="Welche Ziele wollen Sie mit der Optimierung erreichen?"></textarea>
+      </div>
+
+      <h3>An welchem Angebot sind Sie interessiert?</h3>
+      <div class="form-row checkbox-row-side flex-container">
+        <div class="checkbox-item flex-container">
+        <input type="checkbox" name="interest" value="SEO" id="SEO">
+        <label class="label-right-side" for="SEO">SEO</label>
+       </div>
+       <div class="checkbox-item flex-container">
+        <input type="checkbox" name="interest" value="SEA" id="SEA">
+        <label class="label-right-side" for="SEA">SEA</label>
+       </div>
+       <div class="checkbox-item flex-container">
+        <input type="checkbox" name="interest" value="WebAnalytics" id="WebAnalytics">
+        <label class="label-right-side" for="WebAnalytics">Web Analytics</label>
+       </div>
+       <div class="checkbox-item flex-container">
+        <input type="checkbox" name="interest" value="WebDesign" id="WebDesign">
+        <label class="label-right-side" for="WebDesign">Web Design</label>
+       </div>
+      </div>
+
+  <div class="form-button">
+   <button type="submit" class="formbutton">Offerte einholen</button>
+  </div>
+</form></div>
 
 </div><!-- /#content -->
 </main>

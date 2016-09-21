@@ -186,8 +186,6 @@ label.label-right {
 .form-row {
   margin-bottom: 12px;
 }
-input[type=checkbox] {
-}
 .form-button {
   margin-left: 110px;
 }
@@ -198,6 +196,17 @@ button.formbutton {
   display: block;
   font-family: 'Montserrat', sans-serif;
   padding: 7px 10px;
+}
+
+.form-control-side {
+  width: 95%;
+}
+.checkbox-row-side {
+  width: 95%;
+  }
+label.label-right-side {
+  margin-right: 0;
+  width: 30%;
 }
 
 /* Small Screen
@@ -285,7 +294,7 @@ button.formbutton {
   }
   .form-control {
     width: 95%;
-}
+  }
 }
 
 
