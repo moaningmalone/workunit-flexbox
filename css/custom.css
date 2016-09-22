@@ -88,7 +88,6 @@ ul.workunit-item-bullets, ul.workunit-beinhaltet, ul.workunit-prices {
   content: "\2013";
 }
 
-
 #main {
   margin-left: 20px;
   margin-right: 20px;
@@ -129,6 +128,20 @@ ul#main-menu ul li a {
   font-size: 12px;
 }
 
+footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+#footerspacing {
+  width: 185px;
+}
+#footer {
+  width: 100%;
+}
+#footer-center {
+  flex-grow: 2;
+}
 
 /* Flexbox
 -------------------------------------------------------------------------------*/
@@ -197,6 +210,9 @@ button.formbutton {
   font-family: 'Montserrat', sans-serif;
   padding: 7px 10px;
 }
+#gotcha {
+  display: none;
+}
 
 .form-control-side {
   width: 95%;
@@ -218,7 +234,7 @@ label.label-right-side {
     display: flex;
     display: -webkit-flex; /* Safari */
   }
-  #main {
+  #main, footer {
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
