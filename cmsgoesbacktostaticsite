@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>classic content management systems will die  | Workunit</title>
+  <meta name="description" content="You thought static websites are a thing of the past? Think again. They're the thing of the future!">
+  <meta name="date" content="2016-09-28" />
+
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/togglemenu.js"></script>
+</head>
+
+<body>
+  <div id="mobilenav"></div>
+
+<div id="main" class="flex-container grid_row--md">
+
+<header>
+<div id="fixedheader">
+  <button class="toggle-nav" data-text-swap="X">
+ 	<span>&#8801;</span>
+  </button>
+  <div id="logo">
+   <a class="brand" href="#fakelink" title="WorkUNIT" rel="home">WORKUNIT</a>
+  </div>
+  <div id="emptymobilediv"></div>
+   <nav id="main-nav" class="SETCLASS">
+    <ul id="main-menu">
+     <li><a href="/workunit-flexbox/">Home</a></li>
+     <li><a href="/workunit-flexbox/seo.html">Ressources</a>
+       <ul>
+         <li><a href="workunit-flexbox/cmsgoesbacktostaticsite">Static Sites</a></li>
+       </ul>
+     </li>
+    </ul>
+  </nav>
+</div>
+</header>
+<main>
+<div id="content" class="flex-container grid_row--md">
+
+  <div id="summary" class="flex-item">
+   <div class="img-summary">
+     <img src="img/Redstone_Test_Stand_and_Missile_Test_h700.jpg" alt="">
+   </div>
+   <h2>Static Site Generators</h2>
+     <ul class="workunit-beinhaltet">
+       <li> <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></li>
+       <li> <a href="http://www.metalsmith.io/" target="_blank">Metalsmith.io</a></li>
+       <li> <a href="Hexo.io" target="_blank">Hexo.io</a></li>
+       <li> <a href="https://www.gitbook.com/" target="_blank">GitBook</a></li>
+       <li> <a href="http://octopress.org/" target="_blank">Octopress</a></li>
+       <li> <a href="https://www.staticgen.com/" target="_blank">Top Static Site Generators</a></li>
+     </ul>
+ </div>
+
+
+ <div id="article" class="flex-item">
+  <h1>Classic Content Management Systems Will Die </h1>
+  <div class="workunit-item-description">
+    <p>Remember when websites were built using static html documents? Looks like these times are back!</p>
+  </div>
+  <div class="img-center">
+    <img src="img/Conrad_and_Cooper_Practice_Survival_Training_800.jpg" alt="">
+  </div>
+  <p>In the late 1990s, CMS' became increasingly popular and their success story really took off in the 2000s. With a CMS, websites are built using templates, databases, plugins and application code to dynamically assemble the web pages when requested by users. Because various applications need to work together, this created a complex system, with several applications running at the same time.</p>
+  <p>The bigger and more complex websites became, the more difficult it got to keep up with the complexity. Distributing content over various databases, caching application output and handling traffic peaks has to be scaled. All these server applications add a lot of clutter and make your website vulnerable to outings and hackings. A typical stack consists of about 20 or more software components and the attack surface increases significantly by adding more and more gaddgets or apps, as people tend to do.</p>
+  <p>So: do we really need dynamic websites? Or isn't most content we publish static? In our opinion, more than half of the websites that are currently published with CMS’ could very well do with static websites, while additionally saving money and time and achieving higher security standards. Static Site also offer more scalability. Round-robin DNS can be easily introduced to use as many webservers as needed. There are no complex session caching and frontend node binding rules across multiple frontend servers, etc.<br />
+  Of course, expanding your website will be dependent on development of external services and their API’s (like Imgur for images, Disqus for commenting functions, Vimeo or Wistia for videos, etc.). In the long run, though, it’s perfectly possible to build any server-side application and fully integrate it into your static website. Especially on an open source basis, alle these services are really bound to take off.<br />
+  Another phenomenal reason for static sites is the migration of your content. No more complex migration scripts. Just set up a Git repo and transfer all your content to another solution whenever you like!</p>
+  </div>
+
+  </div><!-- /#content -->
+  </main>
+  </div><!-- /#main -->
+
+  </body>
+  </html>
