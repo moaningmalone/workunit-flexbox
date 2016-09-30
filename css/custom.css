@@ -240,7 +240,7 @@ label.label-right-side {
     margin-left: 10px;
     margin-right: 10px;
   }
-  #article {
+  #article, #contactform {
     order: -1;
   }
   .toggle-nav {
@@ -299,7 +299,6 @@ label.label-right-side {
   }
   #summary {
     flex-grow: 6;
-    margin-bottom: 12px; /* Just so it's the same as #contactform margin-bottom */
   }
   a.brand {
     display: block;
@@ -312,7 +311,7 @@ label.label-right-side {
     max-height: 30vh;
   }
   #contactform {
-    margin-bottom: 18px;
+    margin-bottom: 50px;
   }
   .form-control {
     width: 95%;
