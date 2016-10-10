@@ -160,7 +160,7 @@ ul#footer-menu li {
 .flex-item {
   flex: 1;
 }
-#article {
+#article, #contactform {
   flex-grow: 2;
 }
 
