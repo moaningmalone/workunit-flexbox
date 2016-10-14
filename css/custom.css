@@ -57,7 +57,7 @@ a:hover {
   color: red;
   text-decoration: none;
 }
-p a {
+p a, #reference a, .sidebar-bullets a {
   font-style: italic;
 }
 p a:hover {
@@ -75,16 +75,16 @@ p a:hover {
   line-height: 110%;
 }
 /* UL Lists replace bullets with hyphen */
-ul.workunit-item-bullets, ul.workunit-beinhaltet, ul.workunit-prices {
+ul.workunit-beinhaltet, ul.sidebar-bullets {
   margin-top: 0;
   margin-bottom: 20px;
   padding-left: 0.8em;
   text-indent: -0.8em;
 }
-.workunit-item-bullets li, .workunit-beinhaltet li, .workunit-prices li {
+.workunit-beinhaltet li, .sidebar-bullets li {
   list-style-type: none;
 }
-.workunit-item-bullets li:before, .workunit-beinhaltet li:before, .workunit-prices li:before {
+.workunit-beinhaltet li:before, .sidebar-bullets li:before {
   content: "\2013";
 }
 
@@ -102,6 +102,13 @@ a.brand {
 #logo {
   margin-top: 15px;
 }
+#contact {
+  margin-top: 40px;
+}
+#contact p {
+  margin-top: 0;
+}
+
 footer * {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -231,7 +238,6 @@ label.label-right-side {
 @media (max-width: 720px ) {
   #fixedheader {
     margin-top: 10px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     display: -webkit-flex; /* Safari */
   }
